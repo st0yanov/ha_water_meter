@@ -1,0 +1,18 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Water Meter",
+        "description": "Select the source flow rate sensor and name your meter:",
+        "data": {
+          "source_sensor": "Source sensor",
+          "friendly_name": "Meter name"
+        }
+      }
+    },
+    "error": {},
+    "abort": {
+      "already_configured": "This integration is already configured."
+    }
+  }
+}

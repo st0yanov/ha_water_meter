@@ -1,0 +1,6 @@
+{
+  "name": "Water Meter",
+  "content_in_root": false,
+  "domains": ["water_meter"],
+  "country": "ALL"
+}

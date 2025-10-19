@@ -1,0 +1,10 @@
+{
+  "domain": "water_meter",
+  "name": "Water Meter",
+  "version": "0.0.1",
+  "config_flow": true,
+  "documentation": "https://github.com/st0yanov/ha_water_meter",
+  "requirements": [],
+  "codeowners": ["@st0yanov"],
+  "iot_class": "local_polling"
+}
