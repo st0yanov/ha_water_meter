@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.2] - 2025-10-19
+
+### Added
+
+- Config Flow updated to allow **UI-based selection of source sensor**.
+
+### Fixed
+
+- Updated `sensor.py` and `__init__.py`, removing deprecated `hass.helpers.discovery` calls.
+
 ## [0.0.1] - 2025-10-19
 
 ### Added

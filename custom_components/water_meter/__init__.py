@@ -1,17 +1,13 @@
 """Initialize the Water Meter integration."""
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
-from .const import DOMAIN
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     """Set up Water Meter from a config entry."""
-    hass.async_create_task(
-        hass.helpers.discovery.async_load_platform(
-            "sensor", DOMAIN, {
-                "source_sensor": entry.data["source_sensor"],
-                "friendly_name": entry.data["friendly_name"]
-            },
-            entry
-        )
-    )
+    await hass.config_entries.async_forward_entry_setups(entry, ["sensor"])
     return True
+
+
+async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry):
+    """Unload a Water Meter config entry."""
+    return await hass.config_entries.async_forward_entry_unload(entry, "sensor")
